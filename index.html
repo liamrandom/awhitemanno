@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A White Man?! No!</title>
+</head>
+<body>
+  <main>
+    <button class="button" onclick="audio.play()"><img src="whitemanno.png" alt="No!"></button>
+  </main>
+  <script>
+    const audio = new Audio();
+    audio.src = "NoWhite.mp3"
+  </script>
+  <style>
+body {
+  min-height: 800px;
+  background-color:rgb(27, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 5px 5px;
+  background-color: rgb(37, 37, 36);
+}
+
+button:hover {
+  background-color: rgb(50, 49, 48);
+}
+
+button:active {
+  box-shadow: 2px 2px;
+}
+
+img {
+  height: 80%;
+}</style>
+</body>
+</html>

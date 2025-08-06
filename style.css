@@ -1,0 +1,28 @@
+
+body {
+  min-height: 800px;
+  background-color:rgb(27, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 5px 5px;
+  background-color: rgb(37, 37, 36);
+}
+
+button:hover {
+  background-color: rgb(50, 49, 48);
+}
+
+button:active {
+  box-shadow: 2px 2px;
+}
+
+img {
+  height: 80%;
+}
