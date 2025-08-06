@@ -3,43 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>A White Man?! No!</title>
 </head>
 <body>
+  <label for="" id="count">0</label>
   <main>
-    <button class="button" onclick="audio.play()"><img src="whitemanno.png" alt="No!"></button>
+    <button id="button"><img src="Assets/Angry.png" alt=""></button>
   </main>
   <script>
-    const audio = new Audio();
-    audio.src = "NoWhite.mp3"
+    let audio = new Audio("Assets/AWhiteMan.mp3");
+    let button = document.getElementById("button");
+    let lab = document.getElementById("count")
+    let count = 0;
+    function play() {
+        count += 1;
+        lab.innerHTML = count;
+        audio.pause();
+        audio.currentTime = 0;
+        audio.play();
+    }
+    button.addEventListener("click", play);
   </script>
-  <style>
-body {
-  min-height: 800px;
-  background-color:rgb(27, 30, 30);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  box-shadow: 5px 5px;
-  background-color: rgb(37, 37, 36);
-}
-
-button:hover {
-  background-color: rgb(50, 49, 48);
-}
-
-button:active {
-  box-shadow: 2px 2px;
-}
-
-img {
-  height: 80%;
-}</style>
 </body>
 </html>
